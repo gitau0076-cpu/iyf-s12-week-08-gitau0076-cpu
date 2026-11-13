@@ -1,0 +1,42 @@
+.app {
+  min-height: 100vh;
+  color: #1f2937;
+  background: #f8fafc;
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  color: #fff;
+  background: #2563eb;
+}
+
+.header h1 { margin: 0; font-size: 1.25rem; }
+.header nav a { margin-left: 1rem; color: #fff; text-decoration: none; }
+.header nav a:hover { text-decoration: underline; }
+
+.content-row { display: flex; justify-content: center; gap: 2rem; }
+.main { width: min(100%, 720px); padding: 2rem 1rem; }
+.post-card { margin-bottom: 1rem; padding: 1.25rem; border: 1px solid #e5e7eb; border-radius: 10px; background: #fff; }
+.post-card h3 { margin: 0 0 .5rem; }
+.post-meta { display: flex; justify-content: space-between; color: #6b7280; font-size: .875rem; }
+.featured { color: #92400e; font-size: .875rem; }
+.button-row { display: flex; flex-wrap: wrap; gap: .5rem; }
+.btn { margin-right: .5rem; padding: .6rem 1.1rem; border: 0; border-radius: 6px; cursor: pointer; font: inherit; }
+.btn-primary { color: #fff; background: #2563eb; }
+.btn-danger { color: #fff; background: #dc2626; }
+.btn:disabled { opacity: .5; cursor: not-allowed; }
+.footer { padding: 1.5rem; color: #6b7280; text-align: center; }
+.footer p { margin: 0; }
+.sidebar { padding: 2rem 1rem; }
+
+@media (max-width: 600px) {
+  .header { padding: 1rem; }
+  .header nav a { margin-left: .5rem; }
+}

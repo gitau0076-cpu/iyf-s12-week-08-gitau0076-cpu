@@ -1,0 +1,36 @@
+.lesson16-app {
+  min-height: 100vh;
+  color: #1f2937;
+  background: #f6f8fc;
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+}
+
+.lesson16-header { padding: 2.5rem 1rem; color: white; text-align: center; background: #1d4ed8; }
+.lesson16-header h1 { margin: 0; font-size: clamp(2rem, 5vw, 3rem); }
+.lesson16-header p { margin: .3rem 0 0; }
+.lesson16-eyebrow { font-size: .85rem; letter-spacing: .08em; text-transform: uppercase; opacity: .85; }
+.lesson16-content { width: min(100% - 2rem, 720px); margin: 2rem auto; }
+.lesson16-content > h2 { margin: 1.75rem 0 .75rem; }
+.lesson16-demo, .lesson16-form, .lesson16-post { margin-bottom: 1rem; padding: 1.25rem; border: 1px solid #e2e8f0; border-radius: 12px; background: white; box-shadow: 0 3px 12px #0f172a0a; }
+.lesson16-demo { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.lesson16-demo h2, .lesson16-form h2 { margin: 0 0 .25rem; font-size: 1.1rem; }
+.lesson16-demo p { margin: 0; color: #64748b; }
+.lesson16-form { display: grid; gap: .55rem; }
+.lesson16-form label { font-weight: 600; }
+.lesson16-form input, .lesson16-form textarea { box-sizing: border-box; width: 100%; padding: .7rem .8rem; border: 1px solid #cbd5e1; border-radius: 7px; font: inherit; }
+.lesson16-form textarea { resize: vertical; }
+.lesson16-button { padding: .55rem .9rem; border: 0; border-radius: 7px; color: white; background: #2563eb; cursor: pointer; font: inherit; font-weight: 600; }
+.lesson16-button:hover { background: #1d4ed8; }
+.lesson16-button-quiet { color: #334155; background: #e2e8f0; }
+.lesson16-button-quiet:hover { background: #cbd5e1; }
+.lesson16-button-delete { background: #dc2626; }
+.lesson16-button-delete:hover { background: #b91c1c; }
+.lesson16-actions { display: flex; gap: .5rem; margin-top: .9rem; }
+.lesson16-post h3 { margin: 0 0 .4rem; }
+.lesson16-post > p { margin: 0; }
+.lesson16-meta { display: flex; justify-content: space-between; gap: 1rem; margin-top: .8rem; color: #64748b; font-size: .9rem; }
+.lesson16-stats { padding: .65rem 1rem; border-radius: 8px; color: #1e3a8a; background: #dbeafe; font-weight: 700; }
+.lesson16-empty { padding: 1.5rem; border: 1px dashed #94a3b8; border-radius: 10px; color: #64748b; text-align: center; }
+
+@media (max-width: 520px) { .lesson16-demo { align-items: flex-start; flex-direction: column; } }
